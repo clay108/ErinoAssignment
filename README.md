@@ -119,4 +119,24 @@ The application allows users to:
      "updatedAt": "ISODate"
    }
    ```
+## Challenges and Solutions
+
+### Edit Button Functionality Issue
+
+**Problem:**  
+The Edit button in the contact management table was not working as expected. When clicked, it failed to populate the form with the selected contact's data, and updates made to the contact were not saved in the database.
+
+**Root Cause:**  
+- Incorrect state management in the React component handling the Edit functionality.  
+- The selected contact's data was not being passed properly to the form for editing.  
+- The `PUT` request to update the contact in the backend API was not configured correctly.
+
+**Solution:**  
+- Implemented a function to populate the form fields with the selected contact's data by setting the form's state dynamically based on the selected contact.
+- Updated the `onEditContact` handler to pass the contact object to the form component.
+- Verified that the form state was correctly updated with the selected contact’s data on button click.
+- Debugged the backend API request and corrected the `PUT` endpoint to ensure the updated contact details were saved in the database.
+- Tested the complete edit workflow end-to-end to confirm that the functionality worked seamlessly.
+
+This approach ensured the Edit button worked as intended, allowing users to update contact details successfully.
 
