@@ -44,9 +44,14 @@ npm install
 ```
 npm run start
 ```
-##Running the App
-###1. Ensure the backend server is running (http://localhost:5000).
-###2. Access the frontend React app at http://localhost:3000.
+# Running the App:
+
+### 1. Ensure the backend server is running:
+- URL: [http://localhost:5000](http://localhost:5000)
+
+### 2. Access the frontend React app:
+- URL: [http://localhost:3000](http://localhost:3000)
+
 
 ## Project Overview  
 This project is a **Contact Management System** built with the MERN stack.  
